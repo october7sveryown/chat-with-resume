@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build":"npm install && npm run build",
+    "build": "esbuild index.js --bundle --platform=node --target=node14 --outfile=dist/index.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "express": "^4.18.2",
     "hnswlib-node": "^2.0.0",
     "langchain": "^0.0.160",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "esbuild":"0.19.4"
   }
 }
