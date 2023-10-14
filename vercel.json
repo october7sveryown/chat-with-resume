@@ -12,11 +12,4 @@
         "dest": "index.js"
       }
     ],
-    {
-  "functions": {
-    "index.js": {
-      "runtime": "nodejs14.x",
-      "includeFiles": "dist/**"
-    }
-  }
   }
