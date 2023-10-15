@@ -14,7 +14,7 @@ class LangChain {
     /* Initialize the LLM to use to answer the question */
     const model = new ChatOpenAI({});
     /* Load in the file we want to do question answering over */
-    const text = fs.readFileSync('data.txt', 'utf8');
+    const text = fs.readFileSync(process.cwd()+'/data.txt', 'utf8');
     /* Split the text into chunks */
     const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000 });
     const docs = await textSplitter.createDocuments([text]);
